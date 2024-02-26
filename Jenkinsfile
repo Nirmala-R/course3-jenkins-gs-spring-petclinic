@@ -16,8 +16,6 @@ pipeline {
         stage("capture"){
             steps {
                archiveArtifacts '**/target/*.jar'
-               jacoco()
-               junit '**/target/surefire-reports/TEST*.xml'
             }
       }
      }
